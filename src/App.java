@@ -12,17 +12,17 @@ public class App {
 		//this should print 4 6 11 3
 	}
 	public static int[] rowSums(int[][] nums){
-		int[] array = new int[4];
+		int[] sums = new int[nums.length];
 		for(int row=0; row<nums.length; row++){
 			int sum = 0;
 
 			for(int col=0; col<nums[row].length; col++){
 				sum += nums[row][col];
 			}
-			array[row]=sum;
+			sums[row]=sum;
 
 		}
-		return array;
+		return sums;
 	}
 	
 }
